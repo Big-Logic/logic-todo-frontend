@@ -1,3 +1,3 @@
 export default () => {
-    return <nav></nav>
-}
+  return <nav>Navbar</nav>;
+};
