@@ -1,5 +1,9 @@
+import { RouterProvider} from "react-router"
+
+import Root from "./routes/Root"
+
 function App() {
-  return <h1>Logic Todo</h1>
+  return <RouterProvider router={Root} />
 }
 
 export default App
