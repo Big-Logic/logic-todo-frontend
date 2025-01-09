@@ -14,6 +14,8 @@ export default createGlobalStyle`
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  --rounded-10: 1rem;
+  --padding-2-1_5: 2rem 1.5rem;
  }
 
 
