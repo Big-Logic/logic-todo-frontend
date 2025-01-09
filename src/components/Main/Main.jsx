@@ -1,3 +1,5 @@
+import { Container } from "./MainStyle";
+
 export default () => {
-  return <div>Main</div>;
+  return <Container>Main</Container>;
 };

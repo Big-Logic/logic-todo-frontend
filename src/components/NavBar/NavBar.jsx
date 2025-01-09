@@ -1,3 +1,5 @@
+import { Nav } from "./NavBarStyle";
+
 export default () => {
-  return <nav>Navbar</nav>;
+  return <Nav>Navbar</Nav>;
 };
