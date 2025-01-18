@@ -18,8 +18,8 @@ const routes = createRoutesFromChildren(
   <Route element={<AppLayout />}>
     <Route element={<AuthLayout />}>
       <Route index element={<Home />} />
-      <Route path="/setting" element={<Setting />} />
-      <Route path="/user-setting" element={<UserSetting />} />
+      <Route path="/general-setting" element={<Setting />} />
+      <Route path="/account-setting" element={<UserSetting />} />
     </Route>
     <Route path="auth" element={<Auth />} />
   </Route>

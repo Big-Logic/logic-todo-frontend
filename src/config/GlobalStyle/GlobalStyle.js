@@ -15,7 +15,12 @@ export default createGlobalStyle`
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
   --rounded-10: 1rem;
+  --rounded-100: 10rem;
   --padding-2-1_5: 2rem 1.5rem;
+  --white: #fff;
+  --font-normal: 1.5rem;
+  --font-bold-500: 500;
+  --header-font: 1.8rem
  }
 
 
@@ -43,7 +48,7 @@ export default createGlobalStyle`
     }
 
     body, input {
-        font-size: 1.8rem;
+        font-size: var(--font-normal);
         line-height: 1.7;
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
         font-weight: 400;
@@ -62,7 +67,8 @@ export default createGlobalStyle`
         background-color: transparent;
         border: none;
         cursor: pointer;
-        font-size: 1.6rem;
+        font-size: var(--font-normal);
+        font-weight: var(--font-bold-500);
     }
 
     img {
@@ -72,5 +78,6 @@ export default createGlobalStyle`
 
     a {
         text-decoration: none;
+        color: #000;
     }
 `;
