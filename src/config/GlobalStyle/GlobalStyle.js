@@ -14,10 +14,18 @@ export default createGlobalStyle`
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
+  /* Color */
+  --primary-color: #065FFA;
+  --primary-tint: #e6efff;
+  --primary-shade: #010919;
+  --white: #fff;
+  --black: #000;
+  /* Border */
   --rounded-10: 1rem;
   --rounded-100: 10rem;
+  /* Padding */
   --padding-2-1_5: 2rem 1.5rem;
-  --white: #fff;
+  /* Font */
   --font-normal: 1.5rem;
   --font-bold-500: 500;
   --header-font: 1.8rem
@@ -47,7 +55,7 @@ export default createGlobalStyle`
         font-size: 62.5%;
     }
 
-    body, input {
+    body, input, textarea {
         font-size: var(--font-normal);
         line-height: 1.7;
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;

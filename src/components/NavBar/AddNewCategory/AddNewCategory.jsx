@@ -1,6 +1,7 @@
 import { HiOutlinePlus } from "react-icons/hi";
 import { ttBtnStyle } from "./AddNewCategoryStyle";
 import ToolTip from "../../Reusables/ToolTip/ToolTip";
+import NewCategoryForm from "./NewCategoryForm/NewCategoryForm";
 
 const buttonChildren = (
   <>
@@ -12,7 +13,7 @@ export default () => {
   return (
     <div>
       <ToolTip buttonChildren={buttonChildren} buttonCustomStyle={ttBtnStyle}>
-        <div>Hello</div>
+        <NewCategoryForm />
       </ToolTip>
     </div>
   );
