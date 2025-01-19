@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useId, useRef, useState } from "react";
+import React, { useCallback, useEffect, useId, useRef, useState } from "react";
 import { TtBtn, TtBox, TooltipContainer } from "./ToolTipStyle";
 
 export function TooltipButton({
@@ -78,7 +78,7 @@ export default ({
           $position={position}
           id={ttBoxId.current}
         >
-          {children}
+          {React.cloneElement(children, { setDisplayTooltip })}
         </TtBox>
       )}
     </TooltipContainer>
