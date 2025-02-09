@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { HiOutlineX } from "react-icons/hi";
 
-import { CF, Container, Ft } from "./NewCategoryFormStyle";
+import { CF, Container, ErrorMsg, Ft } from "./NewCategoryFormStyle";
 
 function FormTitle({ setDisplayTooltip }) {
   return (
@@ -22,17 +22,21 @@ export default ({ setDisplayTooltip }) => {
   const {
     register,
     handleSubmit,
+    resetField,
     formState: { errors },
   } = useForm();
   function submitHandler(data) {
     console.log(data);
+    // resetField("categoryName");
+    // resetField("categoryDescription");
+    setDisplayTooltip(false);
   }
-  console.log(errors);
   return (
     <Container>
       <FormTitle setDisplayTooltip={setDisplayTooltip} />
       <CF onSubmit={handleSubmit(submitHandler)}>
-        <label htmlFor="name">Name:</label>
+        <ErrorMsg>{errors[`${Object.keys(errors)[0]}`]?.message}</ErrorMsg>
+        <label htmlFor="name">Name*:</label>
         <input
           type="text"
           placeholder="Enter category Name"
@@ -42,7 +46,7 @@ export default ({ setDisplayTooltip }) => {
           })}
         />
 
-        <label htmlFor="message">Description:</label>
+        <label htmlFor="message">Description*:</label>
         <textarea
           rows="5"
           placeholder="Enter category description"

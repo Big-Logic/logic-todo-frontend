@@ -54,3 +54,8 @@ export const CF = styled.form`
   button:hover {
   }
 `;
+
+export const ErrorMsg = styled.p`
+  font-size: 1.2rem;
+  color: red;
+`;
